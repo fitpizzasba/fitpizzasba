@@ -34,11 +34,7 @@
 
    <script src=https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js></script>
 
-   <script> 
-     $(document).ready(function){
-      $('.sidenav-trigger').sidenav();
-    });
-  </script>
+
 
   <script> document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
@@ -50,8 +46,8 @@
 <body>
  
  <!--FixNavbar-->
-  <div data-target="mobile-nav " class="sidenav-trigger">
-    <nav>
+  <div>
+    <nav data-target="mobile-nav " class="sidenav-trigger">
       <div class="nav-wrapper #100d0d">
         <a href="#" class="brand-logo">FitPizzaSba</a>
         <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -67,6 +63,11 @@
         </ul>
       </div>
     </nav>
+       <script> 
+     $(document).ready(function){
+      $('.sidenav-trigger').sidenav();
+    });
+  </script>
   </div>
         
 
